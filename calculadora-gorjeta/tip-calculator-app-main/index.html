@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+   
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: hsl(185, 41%, 84%) ;;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    main{
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .container{
+      display: flex;
+      flex-direction: row;
+      background-color: #fff;
+      border-radius: 20px;
+      width: 600px;
+      height: 400px;
+      align-items: center;
+      
+    }
+    
+    
+
+    .caixaperson{
+      width:300px ;
+      height: 300px;
+      background-color: hsl(183, 100%, 15%);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      margin-left: 20px;
+      
+    }
+
+    input{
+      width: 200px;
+      height: 30px;
+      margin-left: 10px;
+      border-radius: 5px;
+     background-color:hsl(185, 41%, 84%) ; 
+     border: none;
+      
+    }
+    p{
+      font-family: Space Mono,sans-serif;
+      margin-left: 10px;
+      font-size: 12px;
+      
+    }
+    
+
+    
+    .btn1{
+      width: 60px;
+      height:30px;
+      background-color: hsl(183, 100%, 15%);
+      color: #fff;
+      border: none;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+    .btn2{
+      width: 60px;
+      height:30px;
+      background-color: hsl(183, 100%, 15%);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    .btn3{
+      width: 60px;
+      height:30px;
+      background-color: hsl(183, 100%, 15%);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    .btn4{
+      width: 60px;
+      height:30px;
+      background-color: hsl(183, 100%, 15%);
+      color: #fff;
+      border: none;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+    .btn5{
+      width: 60px;
+      height:30px;
+      background-color: hsl(183, 100%, 15%);
+      color: #fff;
+      border: none;
+      margin-top: 5px;
+      border-radius: 5px;
+    }
+    .btn6{
+      width: 60px;
+      height:30px;
+      background-color: hsl(183, 100%, 15%);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .reset{
+      background-color: hsl(172, 67%, 45%) ;
+      border: none;
+      width: 200px;
+      height:32px;
+      border-radius: 10px;
+    
+    }
+    .person{
+      color:hsl(184, 14%, 56%) ;
+     
+    }
+
+    h4{
+      color: #fff;
+    
+    }
+    .total{
+      font-family: 'Space Mono',sans-serif;
+      margin-bottom: 50px;
+    }
+    .totalperson{
+      font-family: 'Space Mono',sans-serif;
+      margin-bottom: 40px;
+    }
+    h1{
+     color:hsl(186, 14%, 43%) ;
+     font-family: space Mono , sans-serif;
+     font-size: 20px;
+    }
+
+
+ 
+
+  </style>
+</head>
+<body>
+  <h1>SPLI <br>
+    TTER</h1>
+<main>
+ 
+  <section class="container">
+    <aside class="conteudo">
+     
+
+      <ul>
+         <p>Bill</p>
+         
+            
+         <img src="./images/icon-dollar.svg" alt="">
+       <input class="dolar" type="text">
+    </ul>
+    
+    <ul>
+      <p>Select Tip %</p>
+    <button class="btn1">5%</button>
+    <button class="btn2">10%</button>
+    <button class="btn3">15%</button>
+    </ul>
+
+   <ul>
+    <button class="btn4">25%</button>
+    <button class="btn5">50%</button>
+    <button class="btn6">Custom</button>
+   </ul>
+     
+  
+   <ul>
+    <p>Number of People</p>
+    <input type="text">
+   </ul>
+  </aside>
+
+
+ <aside class="caixaperson">
+  
+    <div class="tip">
+      <ul class="total">
+        <h4> Tip Amount</h4>
+     <p  class="person">/ person</p>
+      </ul>
+      <ul class="totalperson">
+        <h4> Total</h4>
+      <p class="person">/ person</p>
+      </ul>
+      
+      
+
+ <button class="reset"> Reset</button>
+    </div>
+
+    <div class="result"></div>
+  
+ </aside>
+  </section>
+
+ 
+
+</main>
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  
+</body>
+</html>
